@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Prato Saudável</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <button class="back-button hidden">← Voltar</button>
+
+      <section class="welcome-screen" id="welcomeScreen">
+        <div class="welcome-card">
+          <div class="welcome-icon">🍽️</div>
+          <h1>O que eu quero comer?</h1>
+          <p class="welcome-subtitle">Um jogo educativo e divertido</p>
+          <p class="welcome-text">
+            Bem-vindo! 👋
+            Neste jogo você vai compreender e entender como a criança com seletividade alimentar quer se alimentar.
+            Escolha alimentos de diferentes categorias e divirta-se enquanto aprende sobre seletividade alimentar.
+          </p>
+          <div class="welcome-categories">
+            <span class="welcome-chip">Proteínas</span>
+            <span class="welcome-chip">Carboidratos</span>
+            <span class="welcome-chip">Verduras</span>
+            <span class="welcome-chip">Legumes</span>
+            <span class="welcome-chip">Frutas</span>
+          </div>
+          <button id="startButton" class="start-button">Montar Meu Prato</button>
+          <p class="welcome-tip">Clique no botão acima para começar!</p>
+        </div>
+      </section>
+
+      <main class="game-card hidden" id="gameCard">
+        <div class="game-header">
+          <h1>O que eu quero comer?</h1>
+          <p class="game-instruction">Toque no alimento para colocar no prato!</p>
+        </div>
+
+        <div class="categories" role="tablist" aria-label="Filtrar alimentos por categoria">
+          <button class="category-button active" data-category="all">Todos</button>
+          <button class="category-button" data-category="proteina">🥚 Proteínas</button>
+          <button class="category-button" data-category="carboidrato">🍞 Carboidratos</button>
+          <button class="category-button" data-category="vegetal">🥦 Verduras</button>
+          <button class="category-button" data-category="legume">🥕 Legumes</button>
+          <button class="category-button" data-category="fruta">🍎 Frutas</button>
+        </div>
+
+        <div class="food-grid" id="foodGrid"></div>
+
+        <section class="plate-section">
+          <div class="plate-decor heart top-left">💙</div>
+          <div class="plate-decor heart top-right">💙</div>
+          <div class="plate-decor heart bottom-left">💙</div>
+          <div class="plate-decor heart bottom-right">💙</div>
+
+          <div class="plate-area" id="plateArea" aria-label="Área do prato para alimentos selecionados"></div>
+
+          <div class="plate-footer">
+            <span id="plateMessage">Escolha um alimento!</span>
+            <button id="clearPlateBtn" class="clear-button">Limpar prato</button>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
