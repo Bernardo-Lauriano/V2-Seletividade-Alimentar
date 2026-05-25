@@ -3,14 +3,18 @@ const alimentosPorCategoria = {
   proteinas: [
     { nome: 'Ovo',   emoji: '🥚' },
     { nome: 'Frango',twemoji: '1f357' },
-    { nome: 'Feijão',      twemoji: '1fad8' },
-    { nome: 'Carne',       emoji: '🍖' },
+    { nome: 'Carne',       emoji: '🥩' },
     { nome: 'Leite',     emoji: '🥛' },
+    { nome: 'Feijão',      twemoji: '1fad8' },
+    { nome: 'Peixe',      emoji: '🐟' },
+    { nome: 'Queijo',      emoji: '🧀' },
   ],
   carboidratos: [
     { nome: 'Arroz',       twemoji: '1f35a' },
     { nome: 'Macarrão',    twemoji: '1f35d' },
     { nome: 'Batata',      twemoji: '1f954' },
+    { nome: 'Pão Integral',   twemoji: '1f35e' },
+    { nome: 'Bolo',   emoji: '🍰' },
 
 
   ],
@@ -20,14 +24,18 @@ const alimentosPorCategoria = {
     { nome: 'Brócolis',    twemoji: '1f966' },
     { nome: 'Rúcula',      twemoji: '1f331' },
     { nome: 'Tomate',      twemoji: '1f345' },
+    { nome: 'Pimentão',      emoji: '🫑' },
+    { nome: 'Vagem',      emoji: '🫛' },
+    
   ],
   legumes: [
     { nome: 'Cenoura',     twemoji: '1f955' },
     { nome: 'Milho',       emoji: '🌽' },
-    { nome: 'Abobrinha',   twemoji: '1f952' },
+    { nome: 'Berinjela',   emoji: '🍆' },
     { nome: 'Gengibre',    emoji: '🫚'},
     { nome: 'Pepino',      twemoji: '1f952' },
     { nome: 'Batata Doce', emoji: '🍠' },
+    { nome: 'Salada Verde', emoji: '🥗' },
   ],
   frutas: [
     { nome: 'Banana',      twemoji: '1f34c' },
@@ -41,6 +49,7 @@ const alimentosPorCategoria = {
     { nome: 'Pera',        twemoji: '1f350' },
     { nome: 'Tangerina',   twemoji: '1f34b' },
     { nome: 'Cereja',      twemoji: '1f352' },
+    { nome: 'Abacaxi',      twemoji: '1f34d' },
   ]
 };
 
